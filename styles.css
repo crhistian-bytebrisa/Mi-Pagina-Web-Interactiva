@@ -26,6 +26,7 @@ h1{
     position: relative;
     text-align: center;
 }
+
 .mode{
     position: absolute;
     right: 20px;
@@ -87,12 +88,6 @@ button:hover{
     height: 200px;
     border: 2px solid var(--primary-color);
     background-color: #818181;
-}
-
-.hidden{
-    opacity: 0;
-    transform: scale(0.5);
-    pointer-events: none;
 }
 
 @media (max-width: 600px) {

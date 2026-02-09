@@ -1,4 +1,5 @@
 import {moon, sun} from "./svgscript.js";
+
 //Logica del DarkMode
 const html = document.documentElement;
 const modebutton = document.getElementById('dark');
@@ -20,7 +21,7 @@ if (theme === "dark") {
 }
 
 modebutton.addEventListener("click", () => {  
-    setDarkTheme(html.getAttribute("theme") !== "dark" ? true : false);
+    setDarkTheme(html.getAttribute("theme") === "dark" ? false : true);
 });
 
 
