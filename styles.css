@@ -3,7 +3,6 @@
     --tittle-color: #0000ff;
     --primary-color: #000000;
     --button-back: #dc143c;
-    --box-back: #bfbfbf;
 }
 
 [theme = "dark"]{
@@ -11,7 +10,6 @@
     --tittle-color: #0dff00;
     --primary-color: #ffffff;
     --button-back: #ff9500;
-    --box-back: #818181;
 }
 
 *{
@@ -88,7 +86,7 @@ button:hover{
     width: 200px;
     height: 200px;
     border: 2px solid var(--primary-color);
-    background-color: var(--box-back);
+    background-color: #818181;
 }
 
 .hidden{
