@@ -22,6 +22,7 @@ h1{
     text-align: center;
     color: var(--tittle-color);
 }
+
 .header {
     position: relative;
     text-align: center;
@@ -96,6 +97,16 @@ button:hover{
         position: static;
         transform: none;
         margin-top: 10px;
+    }
+
+    #caja{
+        margin-top: 10px;
+    }
+    
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .header {
