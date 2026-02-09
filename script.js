@@ -1,29 +1,26 @@
+import {moon, sun} from "./svgscript.js";
 //Logica del DarkMode
 const html = document.documentElement;
 const modebutton = document.getElementById('dark');
-const logo_darkmode = document.getElementById('svg');
-const icon = document.querySelector("link[rel~='icon']");
-const savedTheme = localStorage.getItem("theme");
+const logo_darkmode = document.getElementById('svgcontainer');
+let theme = localStorage.getItem("theme");
 
-
-function setTheme(isDark)
-{
-    html.toggleAttribute("data-theme", isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    icon.href = isDark? "assets/moon.svg" : "assets/sun.svg";
-    logo_darkmode.src = isDark? "assets/sun-darkmode.svg" : "assets/moon.svg";
-    
+function setDarkTheme(isDark)
+{        
+    theme = isDark? "dark" : "light";
+    html.setAttribute("theme",theme);
+    localStorage.setItem("theme",theme);    
+    logo_darkmode.innerHTML = isDark ? sun : moon;
 }
 
-if (savedTheme === "dark") {
-    setTheme(true);
+if (theme === "dark") {
+    setDarkTheme(true);
 } else {
-    setTheme(false);
+    setDarkTheme(false);
 }
 
-modebutton.addEventListener("click", () => {
-    const isDark = html.hasAttribute("data-theme");
-    setTheme(!isDark);
+modebutton.addEventListener("click", () => {  
+    setDarkTheme(html.getAttribute("theme") !== "dark" ? true : false);
 });
 
 

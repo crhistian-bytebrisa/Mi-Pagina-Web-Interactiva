@@ -6,7 +6,7 @@
     --box-back: #bfbfbf;
 }
 
-[data-theme]{
+[theme = "dark"]{
     --page-color: #191919;
     --tittle-color: #0dff00;
     --primary-color: #ffffff;
@@ -47,6 +47,7 @@ h1{
     display: block;
     width: 30px;
     height: 30px;
+    color: var(--primary-color);
 }
 
 .small-text{
