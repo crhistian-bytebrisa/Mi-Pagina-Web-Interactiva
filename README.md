@@ -1,2 +1,2 @@
-# Mi-Pagina-Web-Interactiva
-Otra de las asignaciones para la materia de Desarrollo Web.
+# Mi-Pagina-Web-Interactiva (Materia Desarrollo Web)
+Pagina web simple con algo utilizando algo del local storage.
